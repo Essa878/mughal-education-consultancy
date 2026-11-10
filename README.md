@@ -139,11 +139,33 @@ the footer include if your cookie use changes.
 
 ## 6. Hosting and HTTPS
 
-Any static host works:
+**Current live site (GitHub Pages):**
+
+- Repository: https://github.com/Essa878/mughal-education-consultancy
+- Live URL: https://essa878.github.io/mughal-education-consultancy/
+- Published from the `main` branch, repository root, with HTTPS enforced.
+- `.nojekyll` is present so GitHub serves the files exactly as built.
+
+To update the live site after editing, run these in the site folder:
+
+```powershell
+git add -A
+git commit -m "Update site content"
+git push
+```
+
+GitHub Pages rebuilds in about a minute. Check the **Actions** tab of the repository
+for the "pages build and deployment" run if a change does not appear.
+
+**Using your own domain later:** register the domain, add a `CNAME` file containing
+just the domain name, then point a `CNAME` DNS record at `essa878.github.io` and
+enable "Enforce HTTPS" in Settings → Pages. When that is done, update the canonical
+and Open Graph URLs in the page template.
+
+Any other static host works too:
 
 - **Netlify / Vercel / Cloudflare Pages** — drag the folder in, HTTPS is automatic.
 - **cPanel / shared hosting** — upload the folder contents to `public_html`.
-- **GitHub Pages** — push the folder to a repository and enable Pages.
 
 Checklist:
 
