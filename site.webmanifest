@@ -1,0 +1,23 @@
+{
+  "name": "Mughal Education Consultancy",
+  "short_name": "Mughal",
+  "description": "Independent student guidance for studying in North Cyprus and international travel assistance from Pakistan.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#08182a",
+  "icons": [
+    {
+      "src": "assets/img/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

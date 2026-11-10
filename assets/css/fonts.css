@@ -1,0 +1,27 @@
+/* Mughal Education Consultancy — locally hosted fonts (latin subset, variable weights)
+   Inter and Playfair Display, SIL Open Font License.
+   Generated from Google Fonts. Do not edit by hand. */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/inter-var.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/playfair-display-var.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/playfair-display-var-italic.woff2") format('woff2');
+}
