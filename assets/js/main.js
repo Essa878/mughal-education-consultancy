@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Mughal Education Consultancy — shared site behaviour
+   Mughal Education Consultants — shared site behaviour
    Header, mobile menu, contact links, reveal animations, cookie notice.
    ========================================================================== */
 
@@ -45,10 +45,10 @@
 
     var messages = {
       study:
-        "Hello Mughal Education Consultancy, I am interested in studying in North Cyprus. Please provide information about universities, admission requirements and application procedures.",
+        "Hello Mughal Education Consultants, I am interested in studying in North Cyprus. Please provide information about universities, admission requirements and application procedures.",
       travel:
-        "Hello Mughal Education Consultancy, I would like information about your international travel services.",
-      general: "Hello Mughal Education Consultancy, I would like some information please."
+        "Hello Mughal Education Consultants, I would like information about your international travel services.",
+      general: "Hello Mughal Education Consultants, I would like some information please."
     };
 
     document.querySelectorAll("[data-wa]").forEach(function (el) {

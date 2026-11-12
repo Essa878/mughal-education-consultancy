@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Mughal Education Consultancy — site configuration
+   Mughal Education Consultants — site configuration
    --------------------------------------------------------------------------
    THIS IS THE FIRST FILE TO EDIT WHEN YOUR DETAILS CHANGE.
    The business contact details are already filled in below.
@@ -18,10 +18,10 @@ window.MT_CONFIG = {
   whatsapp: "905488414775",
 
   // Business email address
-  email: "essamughal456@gmail.com",
+  email: "mughaleducationconsultancy@gmail.com",
 
   // Office / city line shown in the footer and contact page
-  location: "Mughal Education Consultancy, Sunrise St, Dina, Pakistan",
+  location: "Mughal Education Consultants, Mirza House, Mohallah Masoom Shah, Dina, District Jhelum, Pakistan",
 
   /* ---- Enquiry form delivery -------------------------------------------
      Leave formEndpoint empty to use the built-in fallback: the visitor is

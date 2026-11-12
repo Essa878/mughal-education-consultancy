@@ -1,6 +1,6 @@
-# Mughal Education Consultancy — website
+# Mughal Education Consultants — website
 
-A complete, responsive marketing website for **Mughal Education Consultancy**, a Pakistan-based
+A complete, responsive marketing website for **Mughal Education Consultants**, a Pakistan-based
 education consultancy and travel agency offering independent student recruitment and education
 guidance for students interested in studying in North Cyprus, plus travel assistance.
 
@@ -37,8 +37,8 @@ The live contact details below are already applied across the site. To change an
 | Phone (displayed) | `+90 548 841 47 75` | header, footer, contact page, call buttons |
 | Phone link | `+905488414775` (`tel:`) | all telephone links |
 | WhatsApp | `905488414775` | floating button, WhatsApp buttons |
-| Email | `essamughal456@gmail.com` | footer, contact page, form summaries |
-| Address | `Mughal Education Consultancy, Sunrise St, Dina, Pakistan` | footer, contact cards, contact sidebar |
+| Email | `mughaleducationconsultancy@gmail.com` | footer, contact page, form summaries |
+| Address | `Mughal Education Consultants, Mirza House, Mohallah Masoom Shah, Dina, District Jhelum, Pakistan` | footer, contact cards, contact sidebar |
 | Google Maps | search link for the address above | contact page buttons (edit the two `google.com/maps/search` links in `contact.html`) |
 
 **The domain is still a placeholder, not a confirmed registration.** It now mirrors the site name
@@ -318,7 +318,7 @@ long-term rather than re-compressed.
 
 ## 10. Content and compliance notes
 
-- Mughal Education Consultancy is described as an **independent** student recruitment and education guidance
+- Mughal Education Consultants is described as an **independent** student recruitment and education guidance
   service. The site does not claim official university representation, partnerships or logos.
 - There are **no** invented testimonials, student numbers, awards, years of experience, rankings,
   tuition fees, scholarship percentages or guaranteed outcomes.
@@ -351,7 +351,7 @@ They are linked from the footer (Support column and the legal row), from `about.
 `contact.html` (sidebar card and an enquiry-type option), and from `terms.html` and
 `privacy-policy.html`. They are not in the main navigation, which already has nine items.
 
-Both pages state plainly that Mughal Education Consultancy is independent and only describes itself as an
+Both pages state plainly that Mughal Education Consultants is independent and only describes itself as an
 official agent where a **written agreement** exists. Nothing on either page claims registration,
 staff numbers, student numbers, partnerships, rankings or guaranteed outcomes. Do not add such
 claims to win an approval — universities verify them.
@@ -366,7 +366,7 @@ claims to win an approval — universities verify them.
 
 **Do not add photographs of the office, staff or students — real or stock.** The site deliberately
 contains none. Every image is destination, campus or travel photography, and `image-credits.html`
-states that none of the photographs show Mughal Education Consultancy' premises, staff or students. A stock photo
+states that none of the photographs show Mughal Education Consultants' premises, staff or students. A stock photo
 presented as "our office" is a due-diligence red flag; leaving photographs out is the honest choice.
 
 **After an agreement is signed**, update these places:

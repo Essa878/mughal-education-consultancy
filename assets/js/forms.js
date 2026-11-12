@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Mughal Education Consultancy — enquiry forms
+   Mughal Education Consultants — enquiry forms
    Client-side validation, accessible errors and two delivery modes:
    1. Direct delivery when a form endpoint is configured in config.js
    2. A review-and-send panel (email / WhatsApp) when no endpoint is set
@@ -119,7 +119,7 @@
 
   function summaryText(form, data) {
     var title = form.getAttribute("data-subject") || "Website enquiry";
-    var lines = ["Mughal Education Consultancy — " + title, ""];
+    var lines = ["Mughal Education Consultants — " + title, ""];
     data.forEach(function (row) {
       lines.push(row.label + ": " + row.value);
     });
@@ -214,7 +214,7 @@
   function fallbackActions(form, summary) {
     var email = CONFIG.email || "";
     var number = digits(CONFIG.whatsapp);
-    var subject = "Mughal Education Consultancy — " + (form.getAttribute("data-subject") || "Website enquiry");
+    var subject = "Mughal Education Consultants — " + (form.getAttribute("data-subject") || "Website enquiry");
     var actions = "";
 
     if (email) {
@@ -283,7 +283,7 @@
         number +
         "?text=" +
         encodeURIComponent(
-          "Hello Mughal Education Consultancy, I have just submitted an enquiry through your website and would like to discuss it."
+          "Hello Mughal Education Consultants, I have just submitted an enquiry through your website and would like to discuss it."
         )
       : "contact.html";
     showStatus(form, {
@@ -374,8 +374,8 @@
       setBusy(form, true);
 
       var payload = {
-        subject: "Mughal Education Consultancy — " + (form.getAttribute("data-subject") || "Website enquiry"),
-        from_name: "Mughal Education Consultancy website",
+        subject: "Mughal Education Consultants — " + (form.getAttribute("data-subject") || "Website enquiry"),
+        from_name: "Mughal Education Consultants website",
         page: window.location.href
       };
 
