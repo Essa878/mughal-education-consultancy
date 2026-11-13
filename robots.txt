@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mughaleducationconsultancy.com/sitemap.xml
+Sitemap: https://mughalconsultancy.site/sitemap.xml

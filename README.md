@@ -41,13 +41,12 @@ The live contact details below are already applied across the site. To change an
 | Address | `Mughal Education Consultants, Mirza House, Mohallah Masoom Shah, Dina, District Jhelum, Pakistan` | footer, contact cards, contact sidebar |
 | Google Maps | search link for the address above | contact page buttons (edit the two `google.com/maps/search` links in `contact.html`) |
 
-**The domain is still a placeholder, not a confirmed registration.** It now mirrors the site name
-(`mughaleducationconsultancy.com`). Confirm the domain you actually register and replace this value
-before launch:
+**Custom domain:** `mughalconsultancy.site`, registered at Namecheap and served by GitHub Pages.
+The apex domain is the primary address; `www` redirects to it.
 
-| Placeholder | Where it appears | How to change |
+| Value | Where it appears | How to change |
 |---|---|---|
-| `https://www.mughaleducationconsultancy.com` | canonical URLs, Open Graph tags, schema, `sitemap.xml`, `robots.txt` | search & replace across `*.html`, `sitemap.xml`, `robots.txt` (see §7) |
+| `https://mughalconsultancy.site` | canonical URLs, Open Graph tags, schema, `sitemap.xml`, `robots.txt` | search & replace across `*.html`, `sitemap.xml`, `robots.txt` (see §7) |
 
 There are **no social media icons** on the site. The footer column that previously held them is now a
 "Start an enquiry" call-to-action, and the contact page sidebar has a "Before you visit" card with a
@@ -125,7 +124,7 @@ searchConsoleVerification: ""  // meta verification value, if you use the HTML t
 - **Google Search Console** — the easiest method is a DNS verification record. If you use the HTML
   tag method, add the tag to the `<head>` of every page (or add `searchConsoleVerification` support
   in `main.js`).
-- After launch, submit `https://www.mughaleducationconsultancy.com/sitemap.xml` in Search Console.
+- After launch, submit `https://mughalconsultancy.site/sitemap.xml` in Search Console.
 
 ---
 
@@ -142,7 +141,8 @@ the footer include if your cookie use changes.
 **Current live site (GitHub Pages):**
 
 - Repository: https://github.com/Essa878/mughal-education-consultancy
-- Live URL: https://essa878.github.io/mughal-education-consultancy/
+- Live URL: https://mughalconsultancy.site/
+- Fallback URL: https://essa878.github.io/mughal-education-consultancy/ (redirects to the domain)
 - Published from the `main` branch, repository root, with HTTPS enforced.
 - `.nojekyll` is present so GitHub serves the files exactly as built.
 
@@ -157,10 +157,12 @@ git push
 GitHub Pages rebuilds in about a minute. Check the **Actions** tab of the repository
 for the "pages build and deployment" run if a change does not appear.
 
-**Using your own domain later:** register the domain, add a `CNAME` file containing
-just the domain name, then point a `CNAME` DNS record at `essa878.github.io` and
-enable "Enforce HTTPS" in Settings → Pages. When that is done, update the canonical
-and Open Graph URLs in the page template.
+**Custom domain (Namecheap DNS):** the `CNAME` file contains `mughalconsultancy.site`.
+At Namecheap, the apex domain has GitHub's four A records (`185.199.108.153`,
+`185.199.109.153`, `185.199.110.153`, `185.199.111.153`) plus the matching AAAA
+records, and `www` is a CNAME to `essa878.github.io`. In the repository, Settings →
+Pages, the custom domain is set to `mughalconsultancy.site` with "Enforce HTTPS"
+enabled once GitHub issues the certificate.
 
 Any other static host works too:
 
@@ -170,7 +172,7 @@ Any other static host works too:
 Checklist:
 
 - [ ] Force HTTPS (redirect `http://` → `https://` and `www` → non-www or vice versa).
-- [ ] Point the domain `mughaleducationconsultancy.com` at the host.
+- [ ] Point the domain `mughalconsultancy.site` at the host.
 - [ ] Confirm `index.html` is the directory index.
 - [ ] Set a 404 page to `404.html`.
 - [ ] Enable gzip/brotli compression and browser caching for images/CSS/JS.
@@ -244,7 +246,7 @@ If the domain or business name changes:
 ```bash
 # PowerShell example
 Get-ChildItem -Recurse -Include *.html,*.xml,*.txt | ForEach-Object {
-  (Get-Content $_.FullName -Raw).Replace('https://www.mughaleducationconsultancy.com','https://NEW-DOMAIN.com') |
+  (Get-Content $_.FullName -Raw).Replace('https://mughalconsultancy.site','https://NEW-DOMAIN.com') |
     Set-Content $_.FullName -NoNewline
 }
 ```
